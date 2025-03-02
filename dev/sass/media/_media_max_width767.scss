@@ -1,3 +1,38 @@
 @media screen and (max-width: 767px) {
+    .header {
+        padding: 11px 0;
 
+        &-logo {
+            margin-right: 22px;
+            width: 52px;
+		    height: 8px;
+            z-index: 1;
+        }
+    }
+
+    .menu{    
+        &__list{
+            display: flex;
+            gap: 8px;
+        }
+    
+        &__link{
+            font-size: 6px;
+        }
+    }
+
+    .btn{
+        padding: 5px 11px;
+        &.register-btn{
+            margin-left: 11px;
+            padding-right: 18px;
+            font-size: 6px;
+            &::after{
+                width: 6px;
+                height: 6px;
+                top: 50%;
+                left: 78%;
+            }
+        }
+    }
 }

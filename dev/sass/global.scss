@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: $font-primary;
+    font-size: $font-size;
+    background-color: $neutral-white;
+}
+
+
+body{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6{
+   font-weight: 600;
+   margin-bottom: .5em;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.375rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+   font-size: 1.75rem;
+}
+
+h5{
+   font-size: 1.5rem;
+}
+
+h6{
+   font-size: 1.25rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+img{
+   height: auto;
+   max-width: 100%;
+}
+
+.container{
+    max-width: 848px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: $primary-color;
+    border-radius: 2.78px;
+    color: $neutral-white;
+    font-size: 11px;
+    text-decoration: none;
+    text-align: center;
+
+    &.register-btn{
+        margin-left: 22px;
+        padding-right: 38px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: 50%;
+            left: 78%;
+            background: url("./assets/img/arrow-right.svg") center no-repeat;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    &:focus{
+        border: 2px solid $neutral-dgrey;
+    }
+
+    &:active{
+        background-color: $shade2;
+        border: none;
+    }
+
+    &:disabled{
+        background-color: $neutral-silver;
+        color: $neutral-greyblue;
+        background: url("./assets/img/arrow-right_gb.svg") center no-repeat;
+        border: none;
+    }
+
+    &-icon{
+        margin-left: 5px;
+    }
+
+}
