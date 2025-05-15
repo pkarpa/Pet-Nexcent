@@ -35,4 +35,71 @@
             }
         }
     }
+
+    .footer{
+        padding: 22px 54px;
+
+        &__copyright{
+            font-size: 4px;
+        }
+
+        &__logo{
+            width: 64px;
+            height: 10px;
+        }
+
+        &-info{
+            gap: 14px;
+        }
+
+        &-social{
+            gap: 6px;
+            &__item
+            {
+                img{
+                    width: 11px;
+                    height: 11px;
+                }
+            }
+        }
+
+        &-links{
+            gap: 20px;
+
+            &__col-1,
+            &__col-2,
+            &__col-3{
+                h6{
+                    font-size: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        &-comp-nav{
+            gap: 8px;
+            &__item{
+                font-size: 6px;
+            }
+        }
+
+        &-form{
+            &__item{
+                padding: 3px 4px;
+                font-size: 6px;
+                border-radius: 3px;
+                &::placeholder{
+                    font-size: 6px;
+                }
+            }
+
+            &__send{
+                position: absolute;
+                top: 9px;
+                left: 74px;
+                width: 6px;
+                height: 6px;
+            }
+        }
+    }
 }

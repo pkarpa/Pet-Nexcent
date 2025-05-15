@@ -1,7 +1,107 @@
-footer{
-    height: 100px;
+.footer{
+    padding: 44px 114px;
     background: $secondary-color;
     margin-top: auto;
+
+    >.container{
+        display: flex;
+        gap: 24px;
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    &__copyright{
+        color: $neutral-silver;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    &-social{
+        display: flex;
+        gap: 11px;
+        
+
+        &__item{
+            transition: .5s;
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    &-links{
+        margin-left: auto;
+        display: flex;
+        gap: 20px;
+
+        &__col-1,
+        &__col-2,
+        &__col-3{
+            h6{
+                font-size: 14px;
+                color: $neutral-white;
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &-comp-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &__item{
+            text-decoration: none;
+            color: $neutral-silver;
+            font-size: 10px;
+            &:hover{
+                color: $primary-color;
+                text-decoration: underline;
+		    }
+        }
+    }
+
+    &-support-nav{
+        @extend .footer-comp-nav;
+        &__item{
+            @extend .footer-comp-nav__item;
+        }
+    }
+
+    &-form{
+        position: relative;
+
+        &__item{
+            color: $neutral-white;
+            background-color: $neutral-grey;
+            padding: 6px 8px;
+            border-radius: 6px;
+            border: none;
+            font-size: 10px;
+            &::placeholder{
+                color: $neutral-white;
+                font-size: 10px;
+            }
+        }
+
+        &__send{
+            position: absolute;
+            top: 6px;
+            left: 116px;
+            width: 14px;
+            height: 13px;
+            transition: .5s;
+
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+    }
 }
 
  
