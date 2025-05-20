@@ -22,6 +22,7 @@
     }
 
     .btn{
+        font-size: 6px;
         padding: 5px 11px;
         &.register-btn{
             margin-left: 11px;
@@ -35,6 +36,41 @@
             }
         }
     }
+
+    .swiper{
+        height: 200px;
+
+        &-pagination-bullet{
+            width: 4px;
+            height: 4px;
+        }
+    }
+
+    .swiper-slide{
+        .slide{
+            justify-content: center;
+            gap: 34px;
+            &-text{
+                max-width: 220px;
+
+                &__title{
+                    font-size: 22px;
+                    margin-bottom: 6px;;
+                }
+
+                &__description{
+                    font-size: 6px;
+                    margin-bottom: 11px;
+                }
+            }
+
+            &-illustration{
+                width: 130px;
+                height: 135px;
+            }
+        }
+    }
+    
 
     .footer{
         padding: 22px 54px;
