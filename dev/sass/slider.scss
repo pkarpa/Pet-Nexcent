@@ -18,12 +18,14 @@
 
         &__title{
             font-size: 44px;
-            margin-bottom: 11px;;
+            margin-bottom: 11px;
+            color: $neutral-dgrey;
         }
 
         &__description{
             font-size: 12px;
             margin-bottom: 22px;
+            color: $neutral-grey;
         }
 
         .btn{

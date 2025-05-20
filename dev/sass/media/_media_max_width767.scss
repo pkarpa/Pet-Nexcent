@@ -46,6 +46,10 @@
         }
     }
 
+    .slider{
+        margin-bottom: 14px;
+    }
+
     .swiper-slide{
         .slide{
             justify-content: center;
@@ -67,6 +71,33 @@
             &-illustration{
                 width: 130px;
                 height: 135px;
+            }
+        }
+    }
+
+    .our-clients{
+        margin-bottom: 14px;
+        
+        &-text{
+            margin-bottom: 6px;
+
+            .our-clients__title{
+                font-size: 12px;
+            }
+
+            .our-clients__description{
+                font-size: 6px;
+            }
+        }
+
+        .our-clients-icons{
+            justify-content: space-between;
+            gap: 44px;
+            .our-clients-icons__icon{
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
             }
         }
     }
