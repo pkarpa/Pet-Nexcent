@@ -1,0 +1,47 @@
+.community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &-text{
+        &__title{
+            @extend .our-clients__title;
+        }
+
+        &__description{
+            @extend .our-clients__description;
+        }
+    }
+
+    &-items{
+        display: flex;
+        gap: 24px;
+    }
+
+    &-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 208px;
+        padding: 16px;
+
+        &__img{
+            margin-bottom: 11px;
+        }
+
+        &__title{
+            font-size: 20px;
+            font-weight: 600;
+            padding: 0 5px;
+            color: $neutral-dgrey;
+            margin-bottom: 6px;
+        }
+
+        &__description{
+            font-size: 10px;
+            color: $neutral-grey;
+        }
+    }
+}
