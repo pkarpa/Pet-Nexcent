@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 26px;
 
     &-text{
         &__title{
@@ -15,7 +16,9 @@
     }
 
     &-items{
+        width: 100%;
         display: flex;
+        justify-content: space-between;
         gap: 24px;
     }
 
@@ -25,7 +28,7 @@
         align-items: center;
         text-align: center;
         max-width: 208px;
-        padding: 16px;
+        padding: 12px 0;
 
         &__img{
             margin-bottom: 11px;
@@ -34,7 +37,7 @@
         &__title{
             font-size: 20px;
             font-weight: 600;
-            padding: 0 5px;
+            padding: 0 24px;
             color: $neutral-dgrey;
             margin-bottom: 6px;
         }

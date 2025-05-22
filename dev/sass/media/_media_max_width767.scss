@@ -101,6 +101,37 @@
             }
         }
     }
+
+    .community{
+        margin-bottom: 10px;
+        .community-text{
+            margin-bottom: 6px;
+            .community-text__title{
+                font-size: 12px;
+            }
+
+            .community-text__description{
+                font-size: 6px;
+            }
+        }
+
+        .community-item{
+            max-width: 98px;
+            .community-item__img{
+                width: 22px;
+                height: 18px;
+            }
+
+            .community-item__title{
+                font-size: 10px;
+                padding: 0 14px;
+            }
+
+            .community-item__description{
+                font-size: 5px;
+            }
+        }
+    }
     
 
     .footer{
