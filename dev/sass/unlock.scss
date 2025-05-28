@@ -1,0 +1,32 @@
+.unlock{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+
+    &__img{
+        width: 308px;
+        height: 302px;
+    }
+
+    &-text{
+        &__title{
+            @extend .our-clients__title;
+        }
+
+        &__description{
+            @extend .community-item__description;
+            margin-bottom: 22px;
+        }
+    }
+
+    &-btn{
+        border: none;
+        &:hover{
+             border: none;
+        }
+    }
+}

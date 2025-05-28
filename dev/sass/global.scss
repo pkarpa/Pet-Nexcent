@@ -92,9 +92,9 @@ img{
         }
     }
 
-    &:focus{
-        border: 2px solid $neutral-dgrey;
-    }
+    // &:focus{
+    //     border: 2px solid $neutral-dgrey;
+    // }
 
     &:active{
         background-color: $shade2;
