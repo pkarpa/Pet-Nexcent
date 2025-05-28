@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    justify-content: center;
     align-items: center;
     margin-bottom: 16px;
 
@@ -13,6 +12,7 @@
     }
 
     &-text{
+        max-width: 460px;
         &__title{
             @extend .our-clients__title;
         }
